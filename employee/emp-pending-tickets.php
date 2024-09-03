@@ -23,11 +23,10 @@ if(isset($_GET['del']))
           {
             $err = "Try Again Later";
           }
-      #echo "<script>alert('Success! Book details removed');</script>" ;
+      #echo "<script>alert('Success! Booked details removed');</script>" ;
 }
 ?>
-<!--End Server side scriptiing-->
-<!--Log on to codeastro.com for more projects!-->
+<!--End Server side scripting-->
 <!DOCTYPE html>
 <html lang="en">
 <!--HeAD-->
@@ -44,7 +43,7 @@ if(isset($_GET['del']))
 
       <div class="be-content">
       <div class="page-head">
-	  <!--Log on to codeastro.com for more projects!-->
+	  
           <h2 class="page-head-title">Pending Approval Tickets</h2>
           <nav aria-label="breadcrumb" role="navigation">
             <ol class="breadcrumb page-head-nav">
@@ -88,7 +87,7 @@ if(isset($_GET['del']))
                     </div>
                   </div>
                 </div>
-				<!--Log on to codeastro.com for more projects!-->
+			
                 <div class="card-body">
                   <table class="table table-striped table-bordered table-hover table-fw-widget" id="table1">
                     <thead class="thead-dark">
@@ -107,7 +106,7 @@ if(isset($_GET['del']))
                     <tbody>
                     <?php
                         /*
-                        *Lets get details of available trains tickets! !
+                        *Let's get details of available train tickets!!
                         */
                         $ret="SELECT * FROM `orrs_train_tickets` where confirmation !='Approved' "; //sql code to get all details of trains.
                         $stmt= $mysqli->prepare($ret) ;
@@ -140,7 +139,6 @@ if(isset($_GET['del']))
           </div>
          
          <!--footer-->
-		 <!--Log on to codeastro.com for more projects!-->
          <?php include('assets/inc/footer.php');?>
          <!--End Footer-->
         </div>
