@@ -1,4 +1,4 @@
-<!--Server side scripting  code to hold  user session-->
+<!--Server side scripting code to hold user session-->
 <?php
   session_start();
   include('assets/inc/config.php');
