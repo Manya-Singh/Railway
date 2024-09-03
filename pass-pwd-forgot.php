@@ -92,7 +92,7 @@
               </div>
             </div>
             <div class="splash-footer"><a href = "pass-login.php">Home</a></div>
-            <div class="splash-footer">&copy; 2019 - <?php echo date ('Y');?> Online Railway Reservation System | Developed By Martin Mbithi Nzilani</div>
+            <div class="splash-footer">&copy; 2019 - <?php echo date ('Y');?> Online Railway Reservation System | Developed By Manya Singh</div>
         </div>
       </div>
     </div>
