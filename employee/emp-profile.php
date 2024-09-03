@@ -23,9 +23,9 @@
         <?php include('assets/inc/sidebar.php');?>
       <!--End Sidebar-->
 
-        <!--Server Side Scrit To Fetch all details of logged in user-->
+        <!--Server Side Script To Fetch all details of logged-in user-->
         <?php
-            $aid=$_SESSION['emp_id'];//Assaign session variable to passenger ID
+            $aid=$_SESSION['emp_id'];//Assign session variable to passenger ID
             $ret="select * from orrs_employee where emp_id=?"; //sELECT ALL FROM PASSENGERS WHERE PASSENGER ID IS THE LOGGED ONE
             $stmt= $mysqli->prepare($ret) ;
             $stmt->bind_param('i',$aid);
