@@ -10,3 +10,7 @@
 Email   : admin@mail.com
 Password: codeastro.com
 
+**User Login Details**
+
+Email   : employee@mail.com 
+Password: codeastro.com
