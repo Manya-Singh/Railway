@@ -23,9 +23,9 @@
         <?php include('assets/inc/sidebar.php');?>
       <!--End Sidebar-->
 
-        <!--Server Side Scrit To Fetch all details of logged in user-->
+        <!--Server Side Script To Fetch all details of logged-in user-->
         <?php
-            $aid=$_SESSION['admin_id'];//Assaign session variable to  ID
+            $aid=$_SESSION['admin_id'];//Assign session variable to  ID
             $ret="select * from orrs_admin where admin_id=?"; 
             $stmt= $mysqli->prepare($ret) ;
             $stmt->bind_param('i',$aid);
