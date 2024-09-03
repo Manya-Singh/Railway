@@ -1,8 +1,6 @@
 <!DOCTYPE HTML>
 <!--
 	Online Railway Reservation System
-	martdevelopers254 | @MartinMbithi
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 -->
 <html>
 	<head>
@@ -65,7 +63,7 @@
 								<li class="icon brands fa-instagram"><a href="#">instagram.com/orrs</a></li>
 							</ul>
 							<ul class="copyright">
-								<li>&copy; Online Railway Reservation System.</li><li>Developed By: Martin Mbithi Nzilani</li>
+								<li>&copy; Online Railway Reservation System.</li><li>Developed By: Manya Singh</li>
 							</ul>
 						</div>
 					</section>
