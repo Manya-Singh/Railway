@@ -23,7 +23,7 @@ if(isset($_GET['del']))
           {
             $err = "Try Again Later";
           }
-      #echo "<script>alert('Success! Book details removed');</script>" ;
+      #echo "<script>alert('Success! Booked details removed');</script>" ;
 }
 ?>
 <!--End Server side scriptiing-->
@@ -105,7 +105,7 @@ if(isset($_GET['del']))
                     <tbody>
                     <?php
                         /*
-                        *Lets get details of available trains tickets! !
+                        *Let's get details of available train tickets!!
                         */
                         $ret="SELECT * FROM `orrs_train_tickets` "; //sql code to get all details of trains.
                         $stmt= $mysqli->prepare($ret) ;
