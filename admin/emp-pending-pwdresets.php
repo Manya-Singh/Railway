@@ -23,7 +23,7 @@ if(isset($_GET['del']))
           {
             $err = "Try Again Later";
           }
-      #echo "<script>alert('Success! Book details removed');</script>" ;
+      #echo "<script>alert('Success! Booked details removed');</script>" ;
 }
 ?>
 <!--End Server side scriptiing-->
@@ -98,9 +98,9 @@ if(isset($_GET['del']))
                     <tbody>
                     <?php
                         /*
-                        *Lets get some details! !
+                        *Let's get some details!!
                         */
-                        $ret="SELECT * FROM `orrs_passwordresets` where status !='Approved'  "; //sql code to get all details of psssword reset requests.
+                        $ret="SELECT * FROM `orrs_passwordresets` where status !='Approved'  "; //sql code to get all details of password reset requests.
                         $stmt= $mysqli->prepare($ret) ;
                         $stmt->execute() ;//ok
                         $res=$stmt->get_result();
