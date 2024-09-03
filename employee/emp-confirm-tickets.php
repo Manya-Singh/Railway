@@ -10,7 +10,7 @@
      
             $id = $_GET['ticket_id'];
             $confirmation = $_POST['confirmation'];
-            //sql file to update the table of passengers with the new captured information
+            //sql file to update the table of passengers with the newly captured information
             $query="update orrs_train_tickets set confirmation = ? where ticket_id = ?   ";
             $stmt = $mysqli->prepare($query); //prepare sql and bind it later
             $rc=$stmt->bind_param('si', $confirmation, $id);
@@ -34,7 +34,7 @@
   <body>
     <div class="be-wrapper be-fixed-sidebar ">
     <!--Navigation Bar-->
-	<!--Log on to codeastro.com for more projects!-->
+
       <?php include('assets/inc/navbar.php');?>
       <!--End Navigation Bar-->
 
@@ -87,7 +87,6 @@
         {
         ?>
           <div class="row">
-		  <!--Log on to codeastro.com for more projects!-->
             <div class="col-md-12">
               <div class="card card-border-color card-border-color-success">
                 <div class="card-header card-header-divider"><span class="card-subtitle"></span></div>
@@ -150,7 +149,7 @@
                     <div class="form-group row">
                       <label class="col-12 col-sm-3 col-form-label text-sm-right" for="inputText3">Confirmation</label>
                       <div class="col-12 col-sm-8 col-lg-6">
-						<!--Log on to codeastro.com for more projects!-->
+	
                         <select class="form-control" name= "confirmation" id="exampleFormControlSelect1 inputText3">
                           <option selected>--Select--</option>
                           <option value="Approved">Approved</option>
@@ -181,7 +180,7 @@
         <!--footer-->
         <?php include('assets/inc/footer.php');?>
         <!--EndFooter-->
-		<!--Log on to codeastro.com for more projects!-->
+
       </div>
 
     </div>
