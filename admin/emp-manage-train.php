@@ -23,11 +23,10 @@ if(isset($_GET['del']))
           {
             $err = "Try Again Later";
           }
-      #echo "<script>alert('Success! Book details removed');</script>" ;
+      #echo "<script>alert('Success! Booked details removed');</script>" ;
 }
 ?>
-<!--End Server side scriptiing-->
-<!--Log on to codeastro.com for more projects!-->
+<!--End Server side scripting-->
 <!DOCTYPE html>
 <html lang="en">
 <!--HeAD-->
@@ -66,7 +65,7 @@ if(isset($_GET['del']))
         <?php } ?>
         <?php if(isset($err)) {?>
         <!--This code for injecting an alert-->
-		<!--Log on to codeastro.com for more projects!-->
+	
                 <script>
                             setTimeout(function () 
                             { 
@@ -88,7 +87,7 @@ if(isset($_GET['del']))
                     </div>
                   </div>
                 </div>
-				<!--Log on to codeastro.com for more projects!-->
+			
                 <div class="card-body">
                   <table class="table table-striped table-bordered table-hover table-fw-widget" id="table1">
                     <thead class="thead-dark">
@@ -107,7 +106,7 @@ if(isset($_GET['del']))
                     <tbody>
                     <?php
                         /*
-                        *Lets get details of available trains!!
+                        *Let's get details of available trains!!
                         */
                         $ret="SELECT * FROM orrs_train  "; //sql code to get all details of trains.
                         $stmt= $mysqli->prepare($ret) ;
@@ -137,7 +136,6 @@ if(isset($_GET['del']))
                 </div>
               </div>
             </div>
-			<!--Log on to codeastro.com for more projects!-->
           </div>
          
          <!--footer-->
