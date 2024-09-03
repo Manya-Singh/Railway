@@ -11,17 +11,17 @@
       $stmt->execute();//execute bind
       $stmt -> bind_result($pass_email,$pass_pwd,$pass_id);//bind result
       $rs=$stmt->fetch();
-      $_SESSION['pass_id']=$pass_id;//assaign session to passenger id
+      $_SESSION['pass_id']=$pass_id;//assign session to passenger id
       //$uip=$_SERVER['REMOTE_ADDR'];
       //$ldate=date('d/m/Y h:i:s', time());
       if($rs)
-      {//if its sucessfull
+      {//if its successful
         header("location:pass-dashboard.php");
       }
 
       else
       {
-      #echo "<script>alert('Access Denied Please Check Your Credentials');</script>";
+      #echo "<script>alert('Access Denied. Please Check Your Credentials');</script>";
       $error = "Access Denied Please Check Your Credentials";
       }
   }
