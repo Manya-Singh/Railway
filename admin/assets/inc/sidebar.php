@@ -8,7 +8,7 @@
                   <li class=""><a href="emp-dashboard.php"><i class="icon mdi mdi-view-dashboard"></i><span>Dashboard</span></a>
                   </li>
                     <?php
-                      $aid=$_SESSION['admin_id'];//assaign session a varible [PASSENGER ID]
+                      $aid=$_SESSION['admin_id'];//assign session a variable [PASSENGER ID]
                       $ret="select * from orrs_admin where admin_id=?";
                       $stmt= $mysqli->prepare($ret) ;
                       $stmt->bind_param('i',$aid);
