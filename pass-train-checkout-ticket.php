@@ -10,7 +10,6 @@
 <!DOCTYPE html>
 <html lang="en">
 <!--HeAD-->
-<!--Log on to codeastro.com for more projects!-->
   <?php include('assets/inc/head.php');?>
  <!-- end HEAD--> 
   <body>
@@ -103,7 +102,7 @@
           </div>
          
          <!--footer-->
-		 <!--Log on to codeastro.com for more projects!-->
+		
          <?php include('assets/inc/footer.php');?>
          <!--End Footer-->
         </div>
