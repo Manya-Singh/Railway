@@ -10,7 +10,6 @@
   <!--Head-->
     <?php include('assets/inc/head.php');?>
   <!--End Head-->
-  <!--Log on to codeastro.com for more projects!-->
   <body>
     <div class="be-wrapper be-fixed-sidebar">
     <!--Nav Bar-->
@@ -33,7 +32,7 @@
 
         <?php
           /**
-            *hey there lets get details of our viewed train using its train ID
+            *let's get details of our viewed train using its train ID
             */
             $aid=$_GET['id'];
             $ret="select * from orrs_train where id=?";//fetch details of train
@@ -45,10 +44,10 @@
             while($row=$res->fetch_object())
             {
         ?>
-        <!--get details of logged in user-->
+        <!--get details of logged-in user-->
         <div class="main-content container-fluid">
           <div class="row">
-		  <!--Log on to codeastro.com for more projects!-->
+		
             <div class="col-lg-12">
 
             <!--Train Details-->
@@ -88,7 +87,7 @@
                   </div>
                 </div>
               </div>
-              <hr><!--Log on to codeastro.com for more projects!-->
+              <hr>
               <div class="row invoice-footer">
                   <div class="col-lg-12">
                     <button id="print" onclick="printContent('printReceipt');" class="btn btn-lg btn-space btn-secondary">Print</button>
@@ -97,7 +96,7 @@
             </div>
           </div>
         </div>
-        <!--Close logged in user instance-->
+        <!--Close logged-in user instance-->
         <?php }?>
     <!--footer-->
     <?php include('assets/inc/footer.php');?>
