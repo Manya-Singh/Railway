@@ -24,7 +24,7 @@
 			*Use Sweet Alerts Instead Of This Fucked Up Javascript Alerts
 			*echo"<script>alert('Successfully Created Account Proceed To Log In ');</script>";
 			*/ 
-			//declare a varible which will be passed to alert function
+			//declare a variable which will be passed to alert function
 			if($stmt)
 			{
 				$success = "Employee  Account Updated";
@@ -43,7 +43,6 @@
 <!--Head-->
 <?php include('assets/inc/head.php');?>
 <!--End Head-->
-<!--Log on to codeastro.com for more projects!-->
   <body>
     <div class="be-wrapper be-fixed-sidebar ">
     <!--Navigation Bar-->
@@ -63,7 +62,7 @@
               <li class="breadcrumb-item active">Manage</li>
             </ol>
           </nav>
-        </div><!--Log on to codeastro.com for more projects!-->
+        </div>
             <?php if(isset($success)) {?>
                                 <!--This code for injecting an alert-->
                 <script>
@@ -105,7 +104,7 @@
                 <div class="card-header card-header-divider">Employee Profile<span class="card-subtitle">Fill All Details</span></div>
                 <div class="card-body">
                   <form method ="POST">
-				  <!--Log on to codeastro.com for more projects!-->
+				  
                     <div class="form-group row">
                       <label class="col-12 col-sm-3 col-form-label text-sm-right" for="inputText3"> First Name</label>
                       <div class="col-12 col-sm-8 col-lg-6">
@@ -135,7 +134,7 @@
                       <div class="col-12 col-sm-8 col-lg-6">
                         <input class="form-control" readonly name="emp_addr" value="<?php echo $row->emp_addr;?>"  id="inputText3" type="text">
                       </div>
-					  <!--Log on to codeastro.com for more projects!-->
+					  
                     </div>
                     <div class="form-group row">
                       <label class="col-12 col-sm-3 col-form-label text-sm-right" for="inputText3">Department</label>
@@ -168,7 +167,7 @@
                   </form>
                 </div>
               </div>
-			  <!--Log on to codeastro.com for more projects!-->
+			  
             </div>
         <!--End Employee Instance-->
             <?php }?>
