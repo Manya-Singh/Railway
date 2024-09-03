@@ -1,9 +1,9 @@
 <?php
    /**
-    *Server side code to get details of single passenger using id 
+    *Server-side code to get details of a single passenger using id 
     */
     $aid=$_SESSION['admin_id'];
-    $ret="select * from orrs_admin where admin_id=?";//fetch details of pasenger
+    $ret="select * from orrs_admin where admin_id=?";//fetch details of passenger
     $stmt= $mysqli->prepare($ret) ;
     $stmt->bind_param('i',$aid);
     $stmt->execute() ;//ok
