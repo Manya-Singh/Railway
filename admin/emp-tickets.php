@@ -23,7 +23,7 @@ if(isset($_GET['del']))
           {
             $err = "Try Again Later";
           }
-      #echo "<script>alert('Success! Book details removed');</script>" ;
+      #echo "<script>alert('Success! Booked details removed');</script>" ;
 }
 ?>
 <!--End Server side scriptiing-->
@@ -37,7 +37,6 @@ if(isset($_GET['del']))
     <!--navbar-->
       <?php include('assets/inc/navbar.php');?>
       <!--End navbar-->
-	  <!--Log on to codeastro.com for more projects!-->
       <!--Sidebar-->
       <?php include('assets/inc/sidebar.php');?>
       <!--End Sidebar-->
@@ -77,7 +76,6 @@ if(isset($_GET['del']))
         <?php } ?>
 
         <div class="main-content container-fluid">
-		<!--Log on to codeastro.com for more projects!-->
           <div class="row">
             <div class="col-sm-12">
               <div class="card card-table">
@@ -104,10 +102,9 @@ if(isset($_GET['del']))
                       </tr> 
                     </thead>
                     <tbody>
-					<!--Log on to codeastro.com for more projects!-->
                     <?php
                         /*
-                        *Lets get details of available trains tickets! !
+                        *Let's get details of available train tickets!!
                         */
                         $ret="SELECT * FROM `orrs_train_tickets` "; //sql code to get all details of trains.
                         $stmt= $mysqli->prepare($ret) ;
@@ -139,7 +136,6 @@ if(isset($_GET['del']))
           </div>
          
          <!--footer-->
-		 <!--Log on to codeastro.com for more projects!-->
          <?php include('assets/inc/footer.php');?>
          <!--End Footer-->
         </div>
