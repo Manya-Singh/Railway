@@ -18,7 +18,6 @@
       <!--Sidebar-->
         <?php include('assets/inc/sidebar.php');?>
       <!--End Sidebar-->
-	  <!--Log on to codeastro.com for more projects!-->
       <div class="be-content">
         <div class="page-head">
           <h2 class="page-head-title">Train Details</h2>
@@ -33,7 +32,7 @@
 
         <?php
           /**
-            *hey there lets get details of our viewed train using its train ID
+            *let's get details of our viewed train using its train ID
             */
             $aid=$_GET['id'];
             $ret="select * from orrs_train where id=?";//fetch details of train
@@ -45,7 +44,7 @@
             while($row=$res->fetch_object())
             {
         ?>
-        <!--get details of logged in user-->
+        <!--get details of logged-in user-->
         <div class="main-content container-fluid">
           <div class="row">
             <div class="col-lg-12">
@@ -56,7 +55,7 @@
                   <div class="col-sm-7">
                     <div class="invoice-logo"></div>
                   </div>
-                </div><!--Log on to codeastro.com for more projects!-->
+                </div>
                 <div class="row">
                   <div class="col-lg-12">
                     <table class="table table-bordered table-striped" >
@@ -92,11 +91,11 @@
                   <div class="col-lg-12">
                     <button id="print" onclick="printContent('printReceipt');" class="btn btn-lg btn-space btn-secondary">Print</button>
                   </div>
-                </div><!--Log on to codeastro.com for more projects!-->
+                </div>
             </div>
           </div>
         </div>
-        <!--Close logged in user instance-->
+        <!--Close logged-in user instance-->
         <?php }?>
     <!--footer-->
     <?php include('assets/inc/footer.php');?>
