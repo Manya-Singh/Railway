@@ -1,4 +1,4 @@
- <!--Server side code to handle passenger sign up-->
+ <!--Server side code to handle passenger sign-up -->
 <?php
 	session_start();
 	include('assets/inc/config.php');
@@ -21,7 +21,7 @@
 			*Use Sweet Alerts Instead Of This Fucked Up Javascript Alerts
 			*echo"<script>alert('Successfully Created Account Proceed To Log In ');</script>";
 			*/ 
-			//declare a varible which will be passed to alert function
+			//declare a variable that will be passed to the alert function
 			if($stmt)
 			{
 				$success = "Passenger's Account Has Been Created";
