@@ -16,10 +16,10 @@
             $number = $_POST['number'];
             $fare = $_POST['fare'];
             $passengers = $_POST['passengers'];
-            //sql querry to post the entered information
+            //sql query to post the entered information
             $query="insert into orrs_train (name, route, current, destination, time, number, fare, passengers) values(?,?,?,?,?,?,?,?)";
             $stmt = $mysqli->prepare($query);
-            //bind this parameters
+            //bind these parameters
             $rc=$stmt->bind_param('ssssssss', $name, $route, $current, $destination, $time, $number, $fare, $passengers);
             $stmt->execute();
                 if($stmt)
