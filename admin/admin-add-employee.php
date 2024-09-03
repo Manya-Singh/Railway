@@ -1,4 +1,4 @@
- <!--Server side code to handle passenger sign up-->
+ <!--Server side code to handle passenger sign-up -->
  <?php
 	session_start();
 	include('assets/inc/config.php');
@@ -23,7 +23,7 @@
 			*Use Sweet Alerts Instead Of This Fucked Up Javascript Alerts
 			*echo"<script>alert('Successfully Created Account Proceed To Log In ');</script>";
 			*/ 
-			//declare a varible which will be passed to alert function
+			//declare a variable that will be passed to the alert function
 			if($stmt)
 			{
 				$success = "Employee  Account Created";
@@ -45,7 +45,6 @@
   <body>
     <div class="be-wrapper be-fixed-sidebar ">
     <!--Navigation Bar-->
-	<!--Log on to codeastro.com for more projects!-->
       <?php include('assets/inc/navbar.php');?>
       <!--End Navigation Bar-->
 
@@ -89,7 +88,7 @@
        
           <div class="row">
             <div class="col-md-12">
-			<!--Log on to codeastro.com for more projects!-->
+		
               <div class="card card-border-color card-border-color-success">
                 <div class="card-header card-header-divider">Create Employee Profile<span class="card-subtitle">Fill All Details</span></div>
                 <div class="card-body">
@@ -118,7 +117,7 @@
                         <input class="form-control" name="emp_phone"  id="inputText3" type="text">
                       </div>
                     </div>
-					<!--Log on to codeastro.com for more projects!-->
+					
                     <div class="form-group row">
                       <label class="col-12 col-sm-3 col-form-label text-sm-right" for="inputText3">Address</label>
                       <div class="col-12 col-sm-8 col-lg-6">
@@ -150,7 +149,7 @@
                         <input class="form-control" name="emp_pwd"  id="inputText3" type="password">
                       </div>
                     </div>
-					<!--Log on to codeastro.com for more projects!-->
+				
                     <div class="col-sm-6">
                         <p class="text-right">
                           <input class="btn btn-space btn-success" value ="Add New Employee " name = "Create_Profile" type="submit">
@@ -170,7 +169,7 @@
         <?php include('assets/inc/footer.php');?>
         <!--EndFooter-->
       </div>
-	  <!--Log on to codeastro.com for more projects!-->
+
 
     </div>
     <script src="assets/lib/jquery/jquery.min.js" type="text/javascript"></script>
