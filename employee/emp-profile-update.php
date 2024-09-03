@@ -25,7 +25,7 @@
             $stmt->execute();
                 if($stmt)
                 {
-                    $succ = "Your Employee Profile  Has Been Updated";
+                    $succ = "Your Employee Profile Has Been Updated";
                 }
                 else 
                 {
