@@ -16,10 +16,10 @@
             //$number = $_POST['number'];
             //$fare = $_POST['fare'];
             //$passengers = $_POST['passengers'];
-            //sql querry to post the entered information
+            //sql query to post the entered information
             $query="update orrs_passwordresets set status = ? where pwd_id=?";
             $stmt = $mysqli->prepare($query);
-            //bind this parameters
+            //bind these parameters
             $rc=$stmt->bind_param('si', $status, $id);
             $stmt->execute();
                 if($stmt)
