@@ -6,8 +6,7 @@
   check_login();
   $aid=$_SESSION['pass_id'];
 ?>
-<!--End Server side scriptiing-->
-<!--Log on to codeastro.com for more projects!-->
+<!--End Server side scripting-->
 <!DOCTYPE html>
 <html lang="en">
 <!--HeAD-->
@@ -33,7 +32,7 @@
             </ol>
           </nav>
         </div>
-		<!--Log on to codeastro.com for more projects!-->
+	
         <div class="main-content container-fluid">
           <div class="row">
             <div class="col-sm-12">
@@ -56,7 +55,7 @@
                     <tbody>
                         <?php
                         /**
-                         *Lets select train booking details of logged in user using PASSENGER ID as the session
+                         *Let's select train booking details of logged in users using PASSENGER ID as the session
                          */
                             $aid=$_SESSION['pass_id'];
                             $ret="select * from orrs_passenger where pass_id=?";//sql to get details of our user
@@ -86,7 +85,6 @@
               </div>
             </div>
           </div>
-         <!--Log on to codeastro.com for more projects!-->
          <!--footer-->
          <?php include('assets/inc/footer.php');?>
          <!--End Footer-->
