@@ -9,7 +9,7 @@
     {
 
             /*
-            *We have already captured this passenger details....so no need of getting them again.     
+            *We have already captured these passenger details, so no need to get them again.     
             $pass_fname=$_POST['pass_fname'];
             $pass_lname = $_POST['pass_lname'];
             $pass_phone=$_POST['pass_phone'];
@@ -28,18 +28,18 @@
             $pass_dep_time = $_POST['pass_dep_time'];
             $pass_arr_station = $_POST['pass_arr_station'];
             $pass_train_fare = $_POST['pass_train_fare'];
-            //sql file to update the table of passengers with the new captured information
+            //SQL file to update the table of passengers with the newly captured information
             $query="update  orrs_passenger set pass_train_number = ?, pass_train_name = ?, pass_dep_station = ?, pass_dep_time = ?,  pass_arr_station = ?, pass_train_fare = ? where pass_id=?";
-            $stmt = $mysqli->prepare($query); //prepare sql and bind it later
+            $stmt = $mysqli->prepare($query); //prepare SQL and bind it later
             $rc=$stmt->bind_param('ssssssi', $pass_train_number, $pass_train_name, $pass_dep_station, $pass_dep_time, $pass_arr_station, $pass_train_fare, $aid);
             $stmt->execute();
             if($stmt)
             {
-                $succ = "Reserved Train PLease Proceed To Check Out";
+                $succ = "Reserved Train! Please Proceed To Check Out.";
             }
             else 
             {
-                $err = "Please Try Again Later";
+                $err = "Err...Please Try Again Later!";
             }
             #echo"<script>alert('Your Profile Has Been Updated Successfully');</script>";
             }
@@ -134,7 +134,7 @@
                       </div>
                     </div>
 
-                    <!--Lets get the details of one single train using its Train Id 
+                    <!--Lets get the details of one single train using its Train ID 
                     and pass it to this user instance-->
                     <?php
                         $id=$_GET['id'];
@@ -184,7 +184,7 @@
                         <input class="form-control" readonly name="pass_train_fare" value="<?php echo $row->fare;?>"  id="inputText3" type="text">
                       </div>
                     </div>
-                    <!--End TRain  isntance-->
+                    <!--End TRain  instance-->
                     <?php }?>
 
                     <div class="col-sm-6">
