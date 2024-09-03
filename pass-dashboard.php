@@ -10,7 +10,6 @@
   <!--Head-->
   <?php include("assets/inc/head.php");?>
   <!--End Head-->
-  <!--Log on to codeastro.com for more projects!-->
   <body>
 
     <div class="be-wrapper be-fixed-sidebar">
@@ -22,7 +21,7 @@
       <!--Sidebar-->
       <?php include('assets/inc/sidebar.php');?>
       <!--End Sidebar-->
-		<!--Log on to codeastro.com for more projects!-->
+		
       <div class="be-content">
         <div class="main-content container-fluid">
           <div class="row">
@@ -47,7 +46,7 @@
                   </div>
               </a>
             </div>
-			<!--Log on to codeastro.com for more projects!-->
+			
             <div class="col-12 col-lg-6 col-xl-4">
               <a href="pass-print-ticket.php">
                 <div class="widget widget-tile">
@@ -114,7 +113,6 @@
               </div>
             </div>
           </div>
-         <!--Log on to codeastro.com for more projects!-->
         </div>
         <!--footer-->
         <?php include('assets/inc/footer.php');?>
