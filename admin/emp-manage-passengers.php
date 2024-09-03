@@ -17,7 +17,7 @@ if(isset($_GET['del']))
 
         if($stmt)
         {
-          $succ = "Pasenger Details Removed";
+          $succ = "Passenger Details Removed";
         }
           else
           {
@@ -25,7 +25,7 @@ if(isset($_GET['del']))
           }
 }
 ?>
-<!--End Server side scriptiing-->
+<!--End Server side scripting-->
 <!DOCTYPE html>
 <html lang="en">
 <!--HeAD-->
@@ -37,7 +37,6 @@ if(isset($_GET['del']))
       <?php include('assets/inc/navbar.php');?>
       <!--End navbar-->
       <!--Sidebar-->
-	  <!--Log on to codeastro.com for more projects!-->
       <?php include('assets/inc/sidebar.php');?>
       <!--End Sidebar-->
 
@@ -89,7 +88,7 @@ if(isset($_GET['del']))
                 <div class="card-body">
                   <table class="table table-striped table-bordered table-hover table-fw-widget" id="table1">
                     <thead class="thead-dark">
-					<!--Log on to codeastro.com for more projects!-->
+		
                       <tr>
                         <th>Name</th>
                         <th>Contact</th>
@@ -101,7 +100,7 @@ if(isset($_GET['del']))
                     <tbody>
                     <?php
                         /*
-                        *Lets get details of available trains!!
+                        *Let's get details of available trains!!
                         */
                         $ret="SELECT * FROM orrs_passenger"; //sql code to get all details of trains.
                         $stmt= $mysqli->prepare($ret) ;
@@ -128,7 +127,6 @@ if(isset($_GET['del']))
               </div>
             </div>
           </div>
-		  <!--Log on to codeastro.com for more projects!-->
          
          <!--footer-->
          <?php include('assets/inc/footer.php');?>
