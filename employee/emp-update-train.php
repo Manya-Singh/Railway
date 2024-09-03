@@ -16,10 +16,10 @@
             $number = $_POST['number'];
             $fare = $_POST['fare'];
             $passengers = $_POST['passengers'];
-            //sql querry to post the entered information
+            //sql query to post the entered information
             $query="update orrs_train set name= ?, route = ?, current = ?, destination = ?, time = ?, number = ?, fare = ?, passengers = ? where id = ?";
             $stmt = $mysqli->prepare($query);
-            //bind this parameters
+            //bind these parameters
             $rc=$stmt->bind_param('ssssssssi', $name, $route, $current, $destination, $time, $number, $fare, $passengers, $id);
             $stmt->execute();
                 if($stmt)
