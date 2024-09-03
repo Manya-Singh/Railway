@@ -17,7 +17,7 @@ if(isset($_GET['del']))
 
         if($stmt)
         {
-          $succ = "Pasenger Details Removed";
+          $succ = "Passenger Details Removed";
         }
           else
           {
@@ -99,7 +99,7 @@ if(isset($_GET['del']))
                     <tbody>
                     <?php
                         /*
-                        *Lets get details of available trains!!
+                        *Let's get details of available trains!!
                         */
                         $ret="SELECT * FROM orrs_passenger"; //sql code to get all details of trains.
                         $stmt= $mysqli->prepare($ret) ;
