@@ -11,17 +11,17 @@
       $stmt->execute();//execute bind
       $stmt -> bind_result($admin_email,$admin_pwd,$admin_id);//bind result
       $rs=$stmt->fetch();
-      $_SESSION['admin_id']=$admin_id;//assaign session to admin id
+      $_SESSION['admin_id']=$admin_id;//assign session to admin id
       //$uip=$_SERVER['REMOTE_ADDR'];
       //$ldate=date('d/m/Y h:i:s', time());
       if($rs)
-      {//if its sucessfull
+      {//if its successful
         header("location:emp-dashboard.php");
       }
 
       else
       {
-      #echo "<script>alert('Access Denied Please Check Your Credentials');</script>";
+      #echo "<script>alert('Access Denied. Please Check Your Credentials');</script>";
       $error = "Access Denied Please Check Your Credentials";
       }
   }
