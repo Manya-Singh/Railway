@@ -10,7 +10,7 @@
      
             $id = $_GET['ticket_id'];
             $confirmation = $_POST['confirmation'];
-            //sql file to update the table of passengers with the new captured information
+            //sql file to update the table of passengers with the newly captured information
             $query="update orrs_train_tickets set confirmation = ? where ticket_id = ?   ";
             $stmt = $mysqli->prepare($query); //prepare sql and bind it later
             $rc=$stmt->bind_param('si', $confirmation, $id);
