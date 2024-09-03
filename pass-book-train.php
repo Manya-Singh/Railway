@@ -56,7 +56,7 @@
                     <tbody>
                     <?php
                         /*
-                        *Lets get details of available trains!!
+                        *Let's get details of available trains!!
                         */
                         $ret="SELECT * FROM orrs_train  "; //sql code to get all details of trains.
                         $stmt= $mysqli->prepare($ret) ;
