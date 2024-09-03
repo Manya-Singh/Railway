@@ -12,7 +12,6 @@
 <!--HeAD-->
   <?php include('assets/inc/head.php');?>
  <!-- end HEAD--> 
- <!--Log on to codeastro.com for more projects!-->
   <body>
     <div class="be-wrapper be-fixed-sidebar">
     <!--navbar-->
@@ -40,7 +39,7 @@
               
               <?php
               /**
-               * We need to get firstname or username of logged in user!!
+               * We need to get the first name or username of the logged-in user!!
                */         
                 $aid=$_SESSION['pass_id'];
                 $ret="select * from orrs_passenger where pass_id=?";
@@ -71,7 +70,7 @@
                     <tbody>
                         <?php
                         /**
-                         *Lets select train booking details of logged in user using PASSENGER ID as the session
+                         *Let's select train booking details of logged in users using PASSENGER ID as the session
                          */
                             //$aid=$_SESSION['pass_id'];
                             $ret="select * from orrs_passenger where pass_id=?";//sql to get details of our user
@@ -103,7 +102,6 @@
          <!--footer-->
          <?php include('assets/inc/footer.php');?>
          <!--End Footer-->
-		 <!--Log on to codeastro.com for more projects!-->
         </div>
       </div>
      
